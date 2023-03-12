@@ -1,0 +1,132 @@
+*{
+	font-family: sans-serif;
+	transition: all 0.5s;
+}
+body{
+	background-image: url("download.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+h1{
+	color: white;
+	text-align: center;
+	margin: 50px auto;
+	font-weight: bolder;
+	text-shadow: 0 5px 8px gold;
+	font-style: italic;
+}
+
+form div {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	grid-gap: 20px;
+}
+
+form input[name="Name"]{
+	width: 90%;
+}
+input{
+	border-radius: 20px;
+	border-style: none;
+	padding: 10px;
+}
+input:focus{
+	outline-style: none;
+	box-shadow: 2px 5px 10px  gold;
+}
+form > input{
+	margin: auto;
+	display: table;
+	background-color: black;
+	color: white;
+	border-style:dashed ;
+	border-color: yellow;
+	transform-style: ease-in-out;
+	font-size: 18px;
+}
+form > input:hover{
+	transform: scale(1.1);
+	border-color: gold;
+}
+
+@media (max-width: 620px){
+	form div {
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	grid-gap: 20px;
+	justify-content: center;
+	}
+	form input[name="Name"]{
+	width: 98%;
+	}
+	form input[type="number"]{
+	width: 70%;
+	}
+}
+table{
+	color: white;
+	margin:  50px auto;
+	text-align: center;
+	border-color: white;
+	border-collapse: collapse;
+
+}
+
+table, th, td{
+	border:2px solid white;
+
+	border-collapse: collapse;
+	padding: 10px;
+
+}
+button{
+	outline-style: none;
+	border-style: solid;
+	border-width: 1px;
+	background-color: gold;
+	border-radius: 20px;
+	padding: 2px 15px;
+	border-color: black;
+}
+@media (max-width: 650px){
+	table, th, td{
+	border:2px solid white;
+	font-size: 14px;
+	border-collapse: collapse;
+	padding: 5px;
+
+}
+}
+@media (max-width: 500px){
+	table, th, td{
+	border:2px solid white;
+	font-size: 12px;
+	border-collapse: collapse;
+	padding: 5px;
+}
+button{
+	
+	border-radius: 20px;
+	padding: 2px 5px;
+	border-color: black;
+}
+}
+@media (max-width: 410px){
+	table, th, td{
+	border:2px solid white;
+	font-size: 9px;
+	border-collapse: collapse;
+	padding: 2px;
+}
+button{
+	
+	border-radius: 20px;
+	padding: 2px 5px;
+	border-color: black;
+}
+}
